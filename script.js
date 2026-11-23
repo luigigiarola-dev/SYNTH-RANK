@@ -1,5 +1,5 @@
 const $=s=>document.querySelector(s);
-let songs=(window.songs||[]).map(s=>({...s,views:Math.round(s.views*1e6),videoId:null}));
+let rankingSongs=(window.songs||[]).map(s=>({...s,views:Math.round(s.views*1e6),videoId:null}));
 let query='',filter='all',sort='rank',limit=25,favsOnly=false;
 let favorites=new Set();try{favorites=new Set(JSON.parse(localStorage.getItem('synthRankFavorites')||'[]'))}catch{}
 const fmt=n=>(n/1e6).toLocaleString('pt-BR',{minimumFractionDigits:1,maximumFractionDigits:1});
