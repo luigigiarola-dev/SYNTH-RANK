@@ -98,4 +98,4 @@ Signaling (次元通信)|AnythingBecomeMoe|35.8
 Fragile (フラジール)|nulut|35.7
 Momiagewo Shakaagewo|nununununununu|35.7
 Donut Hole 2024|Hachi|35.7`;
-const songs = raw.split('\n').map((line,i)=>{const [title,artist,views]=line.split('|');return {rank:i+1,title,artist,views:Number(views)}});
+window.songs = raw.split('\n').map((line,i)=>{const [title,artist,views]=line.split('|');return {rank:i+1,title,artist,views:Number(views)}});
